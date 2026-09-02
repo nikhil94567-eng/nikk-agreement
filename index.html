@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>NIKK RENT AGREEMENT | Online Rent Agreement Services</title>
 
-<meta name="description" content="NIKK Rent Agreement provides professional assistance for Rent Agreement preparation, registration and doorstep biometric services. Simple, reliable and hassle-free.">
+<meta name="description" content="Nikk Rent Agreement provides professional online Rent Agreement preparation and registration assistance with a simple, reliable and convenient process.">
 
-<meta name="keywords" content="Nikk Rent Agreement, Rent Agreement, Online Rent Agreement, Rent Agreement Registration, Leave and License Agreement">
+<meta name="keywords" content="Nikk Rent Agreement, Online Rent Agreement, Rent Agreement Services, Rent Agreement Registration">
 
-<meta name="author" content="NIKK RENT AGREEMENT">
+<meta name="author" content="Nikk Rent Agreement">
 
-<meta name="theme-color" content="#e87500">
+<meta name="theme-color" content="#d96b00">
 
 <style>
-
-/* =========================
-   GLOBAL
-========================= */
 
 *{
     margin:0;
@@ -33,34 +27,25 @@ html{
 }
 
 body{
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif;
-
-    background:#ffffff;
-    color:#343434;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#fff;
+    color:#181818;
     line-height:1.6;
 }
 
 :root{
-    --orange:#e87500;
-    --orange-dark:#c85f00;
-    --orange-light:#fff4e7;
-    --black:#151515;
+    --orange:#df7000;
+    --orange2:#f28a00;
+    --cream:#fff8ef;
+    --cream2:#fff1df;
+    --dark:#151515;
     --text:#555;
-    --light:#fafafa;
-    --border:#e8e8e8;
-    --green:#25D366;
-    --white:#ffffff;
+    --border:#e9e9e9;
 }
 
 .container{
-    width:92%;
-    max-width:1160px;
+    width:91%;
+    max-width:1180px;
     margin:auto;
 }
 
@@ -69,29 +54,19 @@ a{
     color:inherit;
 }
 
-button{
-    font-family:inherit;
-}
-
-/* =========================
-   HEADER
-========================= */
+/* ================= HEADER ================= */
 
 header{
     position:sticky;
     top:0;
-    z-index:9999;
-
+    z-index:1000;
     background:rgba(255,255,255,.96);
-
-    backdrop-filter:blur(12px);
-
-    border-bottom:1px solid #eeeeee;
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid #eee;
 }
 
 .navbar{
-    min-height:76px;
-
+    height:76px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -102,8 +77,7 @@ header{
     flex-direction:column;
 }
 
-.logo-main{
-    color:var(--black);
+.logo-title{
     font-size:21px;
     font-weight:800;
     letter-spacing:-.5px;
@@ -113,7 +87,7 @@ header{
     color:var(--orange);
     font-size:11px;
     font-weight:600;
-    letter-spacing:.3px;
+    margin-top:1px;
 }
 
 .nav-links{
@@ -126,108 +100,71 @@ header{
     font-size:14px;
     font-weight:600;
     color:#333;
-
-    transition:.25s;
 }
 
 .nav-links a:hover{
     color:var(--orange);
 }
 
-.nav-contact{
+.nav-call{
     background:var(--orange);
-    color:#fff !important;
-
-    padding:11px 18px;
-
-    border-radius:8px;
+    color:white !important;
+    padding:11px 21px;
+    border-radius:9px;
 }
 
-.nav-contact:hover{
-    background:var(--orange-dark);
-}
-
-.menu-btn{
+.menu{
     display:none;
-
     border:0;
     background:none;
-
-    font-size:29px;
+    font-size:30px;
     cursor:pointer;
-
-    color:#111;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero{
     position:relative;
-
     overflow:hidden;
-
-    padding:105px 0 95px;
-
+    padding:100px 0 95px;
     background:
-    radial-gradient(circle at 90% 10%,#fff0dd 0,transparent 32%),
-    linear-gradient(135deg,#ffffff 0%,#fffaf5 100%);
+        radial-gradient(circle at 90% 10%,#ffecd7 0,transparent 31%),
+        linear-gradient(135deg,#fff 0%,#fffaf5 100%);
 }
 
-.hero::after{
+.hero:after{
     content:"";
-
     position:absolute;
-
-    width:360px;
-    height:360px;
-
-    right:-180px;
-    bottom:-180px;
-
+    width:500px;
+    height:500px;
+    right:-270px;
+    bottom:-290px;
     border-radius:50%;
-
-    background:#fff0dd;
-
-    opacity:.5;
+    background:#fff0dc;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-
-    max-width:790px;
+    max-width:850px;
 }
 
-.hero-badge{
+.badge{
     display:inline-flex;
-    align-items:center;
-
-    padding:9px 17px;
-
+    padding:10px 18px;
     border-radius:50px;
-
-    background:#fff0df;
-
-    color:#b75a00;
-
+    background:var(--cream2);
+    color:#a65a08;
     font-size:13px;
     font-weight:700;
-
-    margin-bottom:25px;
+    margin-bottom:26px;
 }
 
 .hero h1{
-    color:var(--black);
-
-    font-size:clamp(43px,7vw,70px);
-
-    line-height:1.03;
-
-    letter-spacing:-2.5px;
-
-    margin-bottom:25px;
+    font-size:clamp(46px,7vw,76px);
+    line-height:1.02;
+    letter-spacing:-3.5px;
+    margin-bottom:27px;
 }
 
 .hero h1 span{
@@ -235,443 +172,299 @@ header{
 }
 
 .hero-description{
-    max-width:700px;
-
-    color:#5d5d5d;
-
+    max-width:720px;
+    color:#666;
     font-size:18px;
-
     line-height:1.75;
-
     margin-bottom:32px;
 }
 
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:13px;
-}
-
-.btn{
+.primary-btn{
     display:inline-flex;
-
     align-items:center;
     justify-content:center;
-
-    min-height:52px;
-
-    padding:0 24px;
-
-    border-radius:9px;
-
-    font-size:15px;
-
-    font-weight:700;
-
-    transition:.25s;
-
-    cursor:pointer;
-}
-
-.btn-primary{
+    min-height:56px;
+    padding:0 32px;
+    border-radius:10px;
     background:var(--orange);
-    color:#fff;
-
-    box-shadow:0 8px 20px rgba(232,117,0,.22);
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    box-shadow:0 12px 30px rgba(223,112,0,.22);
+    transition:.25s;
 }
 
-.btn-primary:hover{
-    background:var(--orange-dark);
-    transform:translateY(-2px);
+.primary-btn:hover{
+    transform:translateY(-3px);
+    background:#c96000;
 }
 
-.btn-secondary{
-    background:#fff;
-    color:#222;
-
-    border:1px solid #dedede;
-}
-
-.btn-secondary:hover{
-    border-color:var(--orange);
-    color:var(--orange);
-
-    transform:translateY(-2px);
-}
-
-.hero-trust{
+.hero-points{
     display:flex;
     flex-wrap:wrap;
-    gap:10px 25px;
+    gap:12px 25px;
+    margin-top:28px;
+}
 
-    margin-top:30px;
-
-    color:#4b4b4b;
-
+.hero-points span{
+    color:#555;
     font-size:14px;
     font-weight:600;
 }
 
-.hero-trust span::before{
+.hero-points span:before{
     content:"✓";
-
     color:var(--orange);
-
     font-weight:900;
-
     margin-right:7px;
 }
 
-/* =========================
-   QUICK STATS
-========================= */
+/* ================= TRUST ================= */
 
-.stats{
+.trust{
     position:relative;
-    z-index:5;
-
+    z-index:10;
     margin-top:-35px;
 }
 
-.stats-box{
+.trust-box{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-
-    background:#fff;
-
+    background:white;
     border:1px solid var(--border);
-
-    border-radius:17px;
-
-    box-shadow:0 15px 45px rgba(0,0,0,.08);
-
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
     overflow:hidden;
 }
 
-.stat{
+.trust-item{
     padding:25px;
-
     text-align:center;
-
     border-right:1px solid var(--border);
 }
 
-.stat:last-child{
+.trust-item:last-child{
     border-right:0;
 }
 
-.stat strong{
+.trust-item strong{
     display:block;
-
-    color:var(--black);
-
-    font-size:22px;
-
+    font-size:20px;
     margin-bottom:3px;
 }
 
-.stat span{
+.trust-item span{
     color:#777;
-
     font-size:13px;
 }
 
-/* =========================
-   SECTION COMMON
-========================= */
+/* ================= GENERAL ================= */
 
 section{
     padding:90px 0;
+    scroll-margin-top:85px;
 }
 
-.section-light{
-    background:#fff;
-}
-
-.section-grey{
-    background:#fafafa;
-}
-
-.section-heading{
+.section-head{
     max-width:700px;
-
     margin:0 auto 48px;
-
     text-align:center;
 }
 
-.section-label{
-    display:inline-block;
-
+.label{
     color:var(--orange);
-
     font-size:12px;
-
     font-weight:800;
-
-    letter-spacing:1.5px;
-
+    letter-spacing:1.7px;
     text-transform:uppercase;
-
-    margin-bottom:8px;
-}
-
-.section-heading h2{
-    color:var(--black);
-
-    font-size:clamp(30px,5vw,42px);
-
-    line-height:1.15;
-
-    letter-spacing:-1px;
-
-    margin-bottom:13px;
-}
-
-.section-heading p{
-    color:#707070;
-
-    font-size:16px;
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services-grid{
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:18px;
-}
-
-.service-card{
-    padding:30px 25px;
-
-    background:#fff;
-
-    border:1px solid var(--border);
-
-    border-radius:15px;
-
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-5px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    border-color:#f0d4b7;
-}
-
-.service-icon{
-    width:52px;
-    height:52px;
-
-    display:grid;
-    place-items:center;
-
-    border-radius:13px;
-
-    background:var(--orange-light);
-
-    font-size:24px;
-
-    margin-bottom:20px;
-}
-
-.service-card h3{
-    color:var(--black);
-
-    font-size:18px;
-
     margin-bottom:9px;
 }
 
-.service-card p{
+.section-head h2{
+    font-size:clamp(32px,5vw,45px);
+    line-height:1.15;
+    letter-spacing:-1.3px;
+    margin-bottom:13px;
+}
+
+.section-head p{
     color:#707070;
+    font-size:16px;
+}
 
+/* ================= SERVICES ================= */
+
+.services{
+    background:#fff;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    padding:30px 26px;
+    border:1px solid var(--border);
+    border-radius:17px;
+    background:white;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 16px 35px rgba(0,0,0,.07);
+    border-color:#f0d1af;
+}
+
+.icon{
+    width:52px;
+    height:52px;
+    display:grid;
+    place-items:center;
+    border-radius:14px;
+    background:var(--cream2);
+    font-size:23px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    font-size:18px;
+    margin-bottom:9px;
+}
+
+.card p{
+    color:#707070;
     font-size:14px;
-
     line-height:1.7;
 }
 
-/* =========================
-   PROCESS
-========================= */
+/* ================= PROCESS ================= */
+
+.process-section{
+    background:#fafafa;
+}
 
 .process-grid{
     display:grid;
-
     grid-template-columns:repeat(5,1fr);
-
     gap:14px;
-
-    position:relative;
 }
 
 .process-card{
-    position:relative;
-
-    background:#fff;
-
-    border:1px solid var(--border);
-
-    border-radius:15px;
-
-    padding:27px 17px;
-
     text-align:center;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:28px 14px;
 }
 
-.process-number{
-    width:44px;
-    height:44px;
-
-    margin:0 auto 16px;
-
+.number{
+    width:45px;
+    height:45px;
     display:grid;
     place-items:center;
-
+    margin:0 auto 16px;
     border-radius:50%;
-
     background:var(--orange);
-
-    color:#fff;
-
-    font-size:15px;
-
+    color:white;
     font-weight:800;
 }
 
 .process-card h3{
-    color:var(--black);
-
     font-size:16px;
-
     margin-bottom:7px;
 }
 
 .process-card p{
     color:#777;
-
     font-size:13px;
 }
 
-/* =========================
-   WHY US
-========================= */
+/* ================= WHY US ================= */
 
 .why-grid{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
-    gap:25px;
-
-    align-items:stretch;
+    gap:24px;
 }
 
-.why-card{
-    background:#fff;
-
+.why-box{
     border:1px solid var(--border);
-
-    border-radius:16px;
-
-    padding:32px;
+    border-radius:18px;
+    padding:34px;
 }
 
-.why-card h3{
-    color:var(--black);
+.why-box.dark{
+    background:var(--dark);
+    color:white;
+    border:0;
+}
 
-    font-size:24px;
+.why-box h3{
+    font-size:25px;
+    margin-bottom:22px;
+}
 
-    margin-bottom:20px;
+.why-box.dark p{
+    color:#bbb;
 }
 
 .why-list{
     display:flex;
-
     flex-direction:column;
-
     gap:17px;
 }
 
 .why-item{
     display:flex;
-
-    gap:13px;
+    gap:12px;
 }
 
-.why-check{
-    flex-shrink:0;
-
+.tick{
     width:27px;
     height:27px;
-
+    flex-shrink:0;
     display:grid;
     place-items:center;
-
     border-radius:50%;
-
-    background:#fff0df;
-
+    background:var(--cream2);
     color:var(--orange);
-
-    font-size:14px;
-
-    font-weight:bold;
+    font-weight:800;
 }
 
 .why-item strong{
     display:block;
-
-    color:#292929;
-
     font-size:15px;
-
-    margin-bottom:2px;
 }
 
 .why-item p{
     color:#777;
-
     font-size:13px;
+    margin-top:2px;
 }
 
-/* =========================
-   CHARGES
-========================= */
+/* ================= CHARGES ================= */
+
+.charges-section{
+    background:#fafafa;
+}
 
 .charge-box{
     max-width:850px;
-
     margin:auto;
-
-    background:#fff;
-
+    background:white;
     border:1px solid var(--border);
-
-    border-radius:17px;
-
+    border-radius:18px;
     overflow:hidden;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.04);
 }
 
 .charge-row{
     display:flex;
-
-    align-items:center;
     justify-content:space-between;
-
     gap:20px;
-
     padding:20px 25px;
-
     border-bottom:1px solid var(--border);
 }
 
@@ -679,355 +472,241 @@ section{
     border-bottom:0;
 }
 
-.charge-name{
-    color:#292929;
-
-    font-weight:700;
-
+.charge-row strong{
     font-size:15px;
 }
 
-.charge-value{
+.charge-row span{
     color:#666;
-
-    font-size:14px;
-
     text-align:right;
+    font-size:14px;
 }
 
 .charge-note{
     max-width:850px;
-
     margin:18px auto 0;
-
-    text-align:center;
-
     color:#777;
-
+    text-align:center;
     font-size:13px;
 }
 
-/* =========================
-   CONTACT CTA
-========================= */
-
-.contact-section{
-    padding:90px 0;
-}
-
-.contact-box{
-    position:relative;
-
-    overflow:hidden;
-
-    background:var(--black);
-
-    border-radius:22px;
-
-    padding:65px 35px;
-
-    text-align:center;
-}
-
-.contact-box::before{
-    content:"";
-
-    position:absolute;
-
-    width:300px;
-    height:300px;
-
-    left:-150px;
-    top:-150px;
-
-    border-radius:50%;
-
-    background:var(--orange);
-
-    opacity:.12;
-}
-
-.contact-box::after{
-    content:"";
-
-    position:absolute;
-
-    width:280px;
-    height:280px;
-
-    right:-140px;
-    bottom:-140px;
-
-    border-radius:50%;
-
-    background:var(--orange);
-
-    opacity:.12;
-}
-
-.contact-content{
-    position:relative;
-
-    z-index:2;
-}
-
-.contact-box h2{
-    color:#fff;
-
-    font-size:clamp(30px,5vw,44px);
-
-    line-height:1.15;
-
-    margin-bottom:13px;
-}
-
-.contact-box p{
-    color:#c9c9c9;
-
-    font-size:16px;
-
-    margin-bottom:27px;
-}
-
-.contact-buttons{
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-}
-
-/* =========================
-   FAQ
-========================= */
+/* ================= FAQ ================= */
 
 .faq{
-    max-width:820px;
-
+    max-width:850px;
     margin:auto;
 }
 
 details{
-    background:#fff;
-
+    background:white;
     border:1px solid var(--border);
-
-    border-radius:11px;
-
+    border-radius:12px;
     margin-bottom:11px;
-
     overflow:hidden;
 }
 
 summary{
-    padding:19px 22px;
-
-    cursor:pointer;
-
-    color:#252525;
-
-    font-size:15px;
-
-    font-weight:700;
-
-    list-style:none;
-
     position:relative;
-
-    padding-right:50px;
+    list-style:none;
+    cursor:pointer;
+    padding:19px 50px 19px 22px;
+    font-size:15px;
+    font-weight:700;
 }
 
 summary::-webkit-details-marker{
     display:none;
 }
 
-summary::after{
+summary:after{
     content:"+";
-
     position:absolute;
-
     right:20px;
-
-    top:15px;
-
+    top:13px;
     color:var(--orange);
-
-    font-size:23px;
-
+    font-size:24px;
     font-weight:400;
 }
 
-details[open] summary::after{
+details[open] summary:after{
     content:"−";
 }
 
 details p{
     padding:0 22px 20px;
-
     color:#707070;
-
     font-size:14px;
-
-    line-height:1.7;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= CTA ================= */
+
+.cta-section{
+    padding:80px 0;
+}
+
+.cta{
+    position:relative;
+    overflow:hidden;
+    background:#151515;
+    border-radius:23px;
+    padding:70px 30px;
+    text-align:center;
+}
+
+.cta:before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    left:-180px;
+    top:-180px;
+    border-radius:50%;
+    background:var(--orange);
+    opacity:.12;
+}
+
+.cta:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    right:-150px;
+    bottom:-150px;
+    border-radius:50%;
+    background:var(--orange);
+    opacity:.12;
+}
+
+.cta-content{
+    position:relative;
+    z-index:2;
+}
+
+.cta h2{
+    color:white;
+    font-size:clamp(32px,5vw,46px);
+    line-height:1.15;
+    margin-bottom:14px;
+}
+
+.cta p{
+    color:#c6c6c6;
+    font-size:16px;
+    margin-bottom:28px;
+}
+
+.cta .primary-btn{
+    box-shadow:none;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
-    background:#111;
-
-    color:#aaa;
-
+    background:#101010;
+    color:#999;
     padding:55px 0 22px;
 }
 
 .footer-grid{
     display:grid;
-
     grid-template-columns:1.5fr 1fr 1fr;
-
     gap:40px;
-
     padding-bottom:35px;
 }
 
 .footer-brand h3{
-    color:#fff;
-
+    color:white;
     font-size:20px;
-
-    margin-bottom:5px;
 }
 
 .footer-brand span{
     color:var(--orange);
-
-    font-size:12px;
-
+    font-size:11px;
     font-weight:600;
 }
 
 .footer-brand p{
-    max-width:350px;
-
-    margin-top:17px;
-
-    color:#999;
-
+    max-width:380px;
+    margin-top:14px;
     font-size:14px;
 }
 
 footer h4{
-    color:#fff;
-
+    color:white;
     font-size:15px;
-
     margin-bottom:15px;
 }
 
 .footer-links{
     display:flex;
-
     flex-direction:column;
-
     gap:9px;
 }
 
 .footer-links a{
-    color:#999;
-
     font-size:14px;
-
-    transition:.2s;
 }
 
 .footer-links a:hover{
-    color:#fff;
-}
-
-.footer-contact a{
-    color:#ddd;
-
-    font-weight:600;
+    color:white;
 }
 
 .copyright{
     border-top:1px solid #292929;
-
     padding-top:20px;
-
     text-align:center;
-
-    color:#777;
-
     font-size:12px;
+    color:#666;
 }
 
-/* =========================
-   WHATSAPP FLOAT
-========================= */
+/* ================= FLOATING CALL ================= */
 
-.whatsapp-float{
+.floating-call{
     position:fixed;
-
     right:20px;
     bottom:20px;
+    z-index:999;
 
-    width:60px;
-    height:60px;
+    width:58px;
+    height:58px;
 
     display:grid;
     place-items:center;
 
-    background:var(--green);
-
-    color:#fff;
-
     border-radius:50%;
 
-    font-size:29px;
+    background:var(--orange);
+    color:white;
 
-    z-index:9998;
+    font-size:24px;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    box-shadow:0 8px 25px rgba(0,0,0,.22);
 
     transition:.25s;
 }
 
-.whatsapp-float:hover{
+.floating-call:hover{
     transform:scale(1.08);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ================= TABLET ================= */
 
 @media(max-width:950px){
 
     .nav-links{
         position:absolute;
-
         top:76px;
         left:0;
         right:0;
 
         display:none;
-
         flex-direction:column;
-
         align-items:stretch;
-
         gap:0;
 
-        background:#fff;
-
-        border-bottom:1px solid var(--border);
-
-        box-shadow:0 10px 20px rgba(0,0,0,.05);
+        background:white;
+        border-bottom:1px solid #eee;
+        box-shadow:0 10px 25px rgba(0,0,0,.06);
     }
 
     .nav-links.active{
@@ -1036,32 +715,28 @@ footer h4{
 
     .nav-links a{
         padding:15px 25px;
-
-        border-bottom:1px solid #f2f2f2;
+        border-bottom:1px solid #f1f1f1;
     }
 
-    .nav-contact{
+    .nav-call{
         margin:10px 20px 15px;
-
         text-align:center;
     }
 
-    .menu-btn{
+    .menu{
         display:block;
     }
 
-    .services-grid{
+    .service-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
     .process-grid{
         grid-template-columns:repeat(2,1fr);
     }
-
-    .why-grid{
-        grid-template-columns:1fr;
-    }
 }
+
+/* ================= MOBILE ================= */
 
 @media(max-width:600px){
 
@@ -1070,58 +745,59 @@ footer h4{
     }
 
     .navbar{
-        min-height:70px;
+        height:70px;
     }
 
-    .logo-main{
+    .logo-title{
         font-size:18px;
     }
 
+    .logo-sub{
+        font-size:9px;
+    }
+
     .hero{
-        padding:70px 0 75px;
+        padding:70px 0 72px;
+    }
+
+    .badge{
+        font-size:12px;
+        margin-bottom:23px;
     }
 
     .hero h1{
-        font-size:43px;
-
-        letter-spacing:-1.7px;
+        font-size:45px;
+        letter-spacing:-2.5px;
     }
 
     .hero-description{
         font-size:16px;
-
         line-height:1.7;
     }
 
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .hero-buttons .btn{
+    .primary-btn{
         width:100%;
     }
 
-    .hero-trust{
+    .hero-points{
         flex-direction:column;
-
         gap:9px;
     }
 
-    .stats{
+    .trust{
         margin-top:-25px;
     }
 
-    .stats-box{
+    .trust-box{
         grid-template-columns:1fr;
     }
 
-    .stat{
+    .trust-item{
         border-right:0;
-
         border-bottom:1px solid var(--border);
     }
 
-    .stat:last-child{
+    .trust-item:last-child{
         border-bottom:0;
     }
 
@@ -1129,7 +805,7 @@ footer h4{
         padding:70px 0;
     }
 
-    .services-grid{
+    .service-grid{
         grid-template-columns:1fr;
     }
 
@@ -1137,61 +813,51 @@ footer h4{
         grid-template-columns:1fr;
     }
 
-    .why-card{
-        padding:25px;
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-box{
+        padding:27px;
     }
 
     .charge-row{
         flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:5px;
+        gap:4px;
     }
 
-    .charge-value{
+    .charge-row span{
         text-align:left;
     }
 
-    .contact-box{
-        padding:50px 22px;
-
-        border-radius:17px;
+    .cta{
+        padding:52px 22px;
+        border-radius:18px;
     }
 
-    .contact-buttons{
-        flex-direction:column;
-    }
-
-    .contact-buttons .btn{
+    .cta .primary-btn{
         width:100%;
     }
 
     .footer-grid{
         grid-template-columns:1fr;
-
         gap:30px;
     }
 
-    .whatsapp-float{
-        width:56px;
-        height:56px;
-
-        right:16px;
-        bottom:16px;
+    .floating-call{
+        width:55px;
+        height:55px;
+        right:17px;
+        bottom:17px;
     }
 }
 
 </style>
-
 </head>
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -1199,7 +865,7 @@ footer h4{
 
 <a href="#home" class="logo">
 
-<span class="logo-main">
+<span class="logo-title">
 NIKK RENT AGREEMENT
 </span>
 
@@ -1209,16 +875,9 @@ Professional Online Rent Agreement Services
 
 </a>
 
-
-<button
-class="menu-btn"
-onclick="toggleMenu()"
-aria-label="Open Menu">
-
+<button class="menu" onclick="toggleMenu()" aria-label="Menu">
 ☰
-
 </button>
-
 
 <nav class="nav-links" id="navLinks">
 
@@ -1226,14 +885,14 @@ aria-label="Open Menu">
 
 <a href="#services">Services</a>
 
-<a href="#process">How It Works</a>
+<a href="#process">Process</a>
 
 <a href="#charges">Charges</a>
 
 <a href="#faq">FAQ</a>
 
-<a href="#contact" class="nav-contact">
-Contact Us
+<a href="tel:+919321303626" class="nav-call">
+Call Now
 </a>
 
 </nav>
@@ -1243,10 +902,7 @@ Contact Us
 </header>
 
 
-
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -1254,60 +910,30 @@ Contact Us
 
 <div class="hero-content">
 
-<div class="hero-badge">
+<div class="badge">
 ✓ Simple • Reliable • Professional
 </div>
 
-
 <h1>
-
 Your Rent Agreement.<br>
-
 <span>Handled Professionally.</span>
-
 </h1>
 
-
 <p class="hero-description">
-
-Get professional assistance with the preparation
-and registration of your Rent Agreement through a
-simple, reliable and convenient process.
-
+Professional assistance with the preparation and
+registration of your Rent Agreement through a simple,
+reliable and convenient process.
 </p>
 
-
-<div class="hero-buttons">
-
-<a
-class="btn btn-primary"
-href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20to%20start%20my%20Rent%20Agreement."
-target="_blank">
-
-💬 WhatsApp Now
-
+<a href="tel:+919321303626" class="primary-btn">
+☎ &nbsp; Call Now
 </a>
 
-
-<a
-class="btn btn-secondary"
-href="tel:+919321303626">
-
-☎ Call +91 93213 03626
-
-</a>
-
-</div>
-
-
-<div class="hero-trust">
+<div class="hero-points">
 
 <span>Easy Process</span>
-
 <span>Professional Assistance</span>
-
 <span>Clear Communication</span>
-
 <span>Doorstep Service Available</span>
 
 </div>
@@ -1319,41 +945,27 @@ href="tel:+919321303626">
 </section>
 
 
+<!-- TRUST -->
 
-<!-- =========================
-     STATS
-========================= -->
-
-<div class="stats">
+<div class="trust">
 
 <div class="container">
 
-<div class="stats-box">
+<div class="trust-box">
 
-<div class="stat">
-
+<div class="trust-item">
 <strong>Simple</strong>
-
 <span>Easy & convenient process</span>
-
 </div>
 
-
-<div class="stat">
-
+<div class="trust-item">
 <strong>Professional</strong>
-
-<span>Agreement assistance</span>
-
+<span>Complete agreement assistance</span>
 </div>
 
-
-<div class="stat">
-
-<strong>Doorstep</strong>
-
-<span>Biometric service available</span>
-
+<div class="trust-item">
+<strong>Convenient</strong>
+<span>Doorstep service available</span>
 </div>
 
 </div>
@@ -1363,110 +975,78 @@ href="tel:+919321303626">
 </div>
 
 
+<!-- SERVICES -->
 
-<!-- =========================
-     SERVICES
-========================= -->
-
-<section class="section-light" id="services">
+<section id="services" class="services">
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-head">
 
-<span class="section-label">
-Our Services
-</span>
+<div class="label">
+Our Service
+</div>
 
 <h2>
-Rent Agreement Services
+Everything You Need for Your Rent Agreement
 </h2>
 
 <p>
-Focused on making your Rent Agreement process
-simple, clear and hassle-free.
+A focused service designed to make your Rent Agreement
+process simple, clear and hassle-free.
 </p>
 
 </div>
 
 
-<div class="services-grid">
+<div class="service-grid">
 
+<div class="card">
 
-<div class="service-card">
-
-<div class="service-icon">
-📝
-</div>
+<div class="icon">📝</div>
 
 <h3>
-Agreement Preparation
+Rent Agreement Preparation
 </h3>
 
 <p>
-Professional assistance with preparing your
-Rent Agreement as per the details provided.
+Professional assistance in preparing your Rent Agreement
+with the required details and terms.
 </p>
 
 </div>
 
 
+<div class="card">
 
-<div class="service-card">
-
-<div class="service-icon">
-📋
-</div>
+<div class="icon">✓</div>
 
 <h3>
 Registration Assistance
 </h3>
 
 <p>
-Guidance and assistance throughout the
-Rent Agreement registration process.
+Guidance and assistance throughout the Rent Agreement
+registration process.
 </p>
 
 </div>
 
 
+<div class="card">
 
-<div class="service-card">
-
-<div class="service-icon">
-🏠
-</div>
+<div class="icon">⌂</div>
 
 <h3>
-Doorstep Biometric
+Doorstep Service
 </h3>
 
 <p>
-Doorstep biometric assistance is available
-where applicable for convenient verification.
+Doorstep biometric service available for added
+convenience wherever applicable.
 </p>
 
 </div>
-
-
-
-<div class="service-card">
-
-<div class="service-icon">
-🔄
-</div>
-
-<h3>
-Agreement Renewal
-</h3>
-
-<p>
-Assistance for customers who need to renew
-their existing Rent Agreement.
-</p>
-
-</div>
-
 
 </div>
 
@@ -1475,27 +1055,25 @@ their existing Rent Agreement.
 </section>
 
 
+<!-- PROCESS -->
 
-<!-- =========================
-     PROCESS
-========================= -->
-
-<section class="section-grey" id="process">
+<section id="process" class="process-section">
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-head">
 
-<span class="section-label">
-Simple Process
-</span>
+<div class="label">
+How It Works
+</div>
 
 <h2>
-How It Works
+A Simple 5-Step Process
 </h2>
 
 <p>
-Five simple steps to get your Rent Agreement process started.
+From sharing your details to receiving your registered
+agreement, we keep the process straightforward.
 </p>
 
 </div>
@@ -1503,95 +1081,79 @@ Five simple steps to get your Rent Agreement process started.
 
 <div class="process-grid">
 
-
 <div class="process-card">
 
-<div class="process-number">
-01
-</div>
+<div class="number">01</div>
 
 <h3>
 Share Details
 </h3>
 
 <p>
-Send the basic agreement details through WhatsApp or call.
+Share landlord, tenant and property details.
 </p>
 
 </div>
 
 
-
 <div class="process-card">
 
-<div class="process-number">
-02
-</div>
+<div class="number">02</div>
 
 <h3>
 Draft Preparation
 </h3>
 
 <p>
-Your Rent Agreement draft is prepared for review.
+Agreement draft is prepared for review.
 </p>
 
 </div>
 
 
-
 <div class="process-card">
 
-<div class="process-number">
-03
-</div>
+<div class="number">03</div>
 
 <h3>
-Review & Confirm
+Review
 </h3>
 
 <p>
-Review the details and confirm the agreement.
+Check the agreement details and confirm.
 </p>
 
 </div>
 
 
-
 <div class="process-card">
 
-<div class="process-number">
-04
-</div>
+<div class="number">04</div>
 
 <h3>
-Verification
+Biometric
 </h3>
 
 <p>
-Complete the required verification and biometric process.
+Complete biometric verification as required.
 </p>
 
 </div>
 
 
-
 <div class="process-card">
 
-<div class="process-number">
-05
-</div>
+<div class="number">05</div>
 
 <h3>
 Registration
 </h3>
 
 <p>
-Complete the registration process and receive the agreement.
+Complete the registration process.
 </p>
 
 </div>
-
 
 </div>
 
@@ -1600,27 +1162,25 @@ Complete the registration process and receive the agreement.
 </section>
 
 
+<!-- WHY CHOOSE -->
 
-<!-- =========================
-     WHY CHOOSE US
-========================= -->
-
-<section class="section-light">
+<section>
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-head">
 
-<span class="section-label">
+<div class="label">
 Why Nikk
-</span>
+</div>
 
 <h2>
-A Better Way to Handle Your Agreement
+Simple Service. Professional Approach.
 </h2>
 
 <p>
-Professional assistance without unnecessary complexity.
+We keep the process focused on what matters most —
+clear communication and convenient assistance.
 </p>
 
 </div>
@@ -1628,7 +1188,232 @@ Professional assistance without unnecessary complexity.
 
 <div class="why-grid">
 
+<div class="why-box">
 
-<div class="why-card">
+<h3>
+Why Choose Us
+</h3>
 
-<
+<div class="why-list">
+
+<div class="why-item">
+
+<div class="tick">✓</div>
+
+<div>
+<strong>Simple Process</strong>
+<p>Easy steps without unnecessary complications.</p>
+</div>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="tick">✓</div>
+
+<div>
+<strong>Professional Assistance</strong>
+<p>Support throughout the agreement process.</p>
+</div>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="tick">✓</div>
+
+<div>
+<strong>Clear Communication</strong>
+<p>Important information explained clearly.</p>
+</div>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="tick">✓</div>
+
+<div>
+<strong>Convenient Service</strong>
+<p>Doorstep biometric service available where applicable.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="why-box dark">
+
+<h3>
+Your Convenience Comes First.
+</h3>
+
+<p>
+Our goal is to make the Rent Agreement process
+comfortable, straightforward and professional from
+start to finish.
+</p>
+
+<br>
+
+<p>
+Have questions or want to start your agreement?
+Simply call us and get the assistance you need.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CHARGES -->
+
+<section id="charges" class="charges-section">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="label">
+Charges
+</div>
+
+<h2>
+Clear & Transparent Charges
+</h2>
+
+<p>
+Government charges and service charges can vary depending
+on your agreement and applicable requirements.
+</p>
+
+</div>
+
+
+<div class="charge-box">
+
+<div class="charge-row">
+
+<strong>
+Government Charges
+</strong>
+
+<span>
+As applicable
+</span>
+
+</div>
+
+
+<div class="charge-row">
+
+<strong>
+Registration Charges
+</strong>
+
+<span>
+As applicable
+</span>
+
+</div>
+
+
+<div class="charge-row">
+
+<strong>
+Service Charges
+</strong>
+
+<span>
+Shared before confirmation
+</span>
+
+</div>
+
+
+<div class="charge-row">
+
+<strong>
+Doorstep Biometric
+</strong>
+
+<span>
+Available where applicable
+</span>
+
+</div>
+
+</div>
+
+
+<p class="charge-note">
+Government fees and applicable charges may change from
+time to time. Final charges will be confirmed before
+the process is started.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="label">
+FAQ
+</div>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<p>
+Quick answers to common Rent Agreement questions.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+What is a Rent Agreement?
+</summary>
+
+<p>
+A Rent Agreement records the terms and conditions agreed
+between the landlord and tenant for renting a property.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How does the Rent Agreement process work?
+</summary>
+
+<p>
+You share the required details, the agreement draft is
+prepared, you review the details, biometric verification
+is completed where required, and the reg
