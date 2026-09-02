@@ -179,6 +179,15 @@ header{
     margin-bottom:32px;
 }
 
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
 .primary-btn{
     display:inline-flex;
     align-items:center;
@@ -197,6 +206,26 @@ header{
 .primary-btn:hover{
     transform:translateY(-3px);
     background:#c96000;
+}
+
+.whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:56px;
+    padding:0 28px;
+    border-radius:10px;
+    background:#25D366;
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    box-shadow:0 12px 30px rgba(37,211,102,.18);
+    transition:.25s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+    background:#1ebe5d;
 }
 
 .hero-points{
@@ -595,6 +624,13 @@ details p{
     margin-bottom:28px;
 }
 
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
 .cta .primary-btn{
     box-shadow:none;
 }
@@ -659,9 +695,9 @@ footer h4{
     color:#666;
 }
 
-/* ================= FLOATING CALL ================= */
+/* ================= FLOATING WHATSAPP ================= */
 
-.floating-call{
+.floating-whatsapp{
     position:fixed;
     right:20px;
     bottom:20px;
@@ -675,17 +711,17 @@ footer h4{
 
     border-radius:50%;
 
-    background:var(--orange);
+    background:#25D366;
     color:white;
 
-    font-size:24px;
+    font-size:27px;
 
     box-shadow:0 8px 25px rgba(0,0,0,.22);
 
     transition:.25s;
 }
 
-.floating-call:hover{
+.floating-whatsapp:hover{
     transform:scale(1.08);
 }
 
@@ -748,6 +784,10 @@ footer h4{
         height:70px;
     }
 
+    .nav-links{
+        top:70px;
+    }
+
     .logo-title{
         font-size:18px;
     }
@@ -775,7 +815,14 @@ footer h4{
         line-height:1.7;
     }
 
-    .primary-btn{
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .primary-btn,
+    .whatsapp-btn{
         width:100%;
     }
 
@@ -835,7 +882,12 @@ footer h4{
         border-radius:18px;
     }
 
-    .cta .primary-btn{
+    .cta-buttons{
+        flex-direction:column;
+    }
+
+    .cta .primary-btn,
+    .cta .whatsapp-btn{
         width:100%;
     }
 
@@ -844,7 +896,7 @@ footer h4{
         gap:30px;
     }
 
-    .floating-call{
+    .floating-whatsapp{
         width:55px;
         height:55px;
         right:17px;
@@ -857,7 +909,7 @@ footer h4{
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -882,17 +934,13 @@ Professional Online Rent Agreement Services
 <nav class="nav-links" id="navLinks">
 
 <a href="#home">Home</a>
-
 <a href="#services">Services</a>
-
 <a href="#process">Process</a>
-
 <a href="#charges">Charges</a>
-
 <a href="#faq">FAQ</a>
 
 <a href="tel:+919321303626" class="nav-call">
-Call Now
+☎ Call Now
 </a>
 
 </nav>
@@ -902,7 +950,7 @@ Call Now
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -925,9 +973,19 @@ registration of your Rent Agreement through a simple,
 reliable and convenient process.
 </p>
 
+<div class="hero-buttons">
+
 <a href="tel:+919321303626" class="primary-btn">
 ☎ &nbsp; Call Now
 </a>
+
+<a href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement,%20I%20want%20to%20know%20about%20Rent%20Agreement%20services."
+class="whatsapp-btn"
+target="_blank">
+💬 &nbsp; WhatsApp Chat
+</a>
+
+</div>
 
 <div class="hero-points">
 
@@ -945,7 +1003,7 @@ reliable and convenient process.
 </section>
 
 
-<!-- TRUST -->
+<!-- ================= TRUST ================= -->
 
 <div class="trust">
 
@@ -975,7 +1033,7 @@ reliable and convenient process.
 </div>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section id="services" class="services">
 
@@ -998,7 +1056,6 @@ process simple, clear and hassle-free.
 
 </div>
 
-
 <div class="service-grid">
 
 <div class="card">
@@ -1016,7 +1073,6 @@ with the required details and terms.
 
 </div>
 
-
 <div class="card">
 
 <div class="icon">✓</div>
@@ -1031,7 +1087,6 @@ registration process.
 </p>
 
 </div>
-
 
 <div class="card">
 
@@ -1055,7 +1110,7 @@ convenience wherever applicable.
 </section>
 
 
-<!-- PROCESS -->
+<!-- ================= PROCESS ================= -->
 
 <section id="process" class="process-section">
 
@@ -1078,7 +1133,6 @@ agreement, we keep the process straightforward.
 
 </div>
 
-
 <div class="process-grid">
 
 <div class="process-card">
@@ -1095,7 +1149,6 @@ Share landlord, tenant and property details.
 
 </div>
 
-
 <div class="process-card">
 
 <div class="number">02</div>
@@ -1109,7 +1162,6 @@ Agreement draft is prepared for review.
 </p>
 
 </div>
-
 
 <div class="process-card">
 
@@ -1125,7 +1177,6 @@ Check the agreement details and confirm.
 
 </div>
 
-
 <div class="process-card">
 
 <div class="number">04</div>
@@ -1139,7 +1190,6 @@ Complete biometric verification as required.
 </p>
 
 </div>
-
 
 <div class="process-card">
 
@@ -1162,7 +1212,7 @@ Complete the registration process.
 </section>
 
 
-<!-- WHY CHOOSE -->
+<!-- ================= WHY CHOOSE ================= -->
 
 <section>
 
@@ -1185,7 +1235,6 @@ clear communication and convenient assistance.
 
 </div>
 
-
 <div class="why-grid">
 
 <div class="why-box">
@@ -1207,7 +1256,6 @@ Why Choose Us
 
 </div>
 
-
 <div class="why-item">
 
 <div class="tick">✓</div>
@@ -1219,7 +1267,6 @@ Why Choose Us
 
 </div>
 
-
 <div class="why-item">
 
 <div class="tick">✓</div>
@@ -1230,7 +1277,6 @@ Why Choose Us
 </div>
 
 </div>
-
 
 <div class="why-item">
 
@@ -1246,7 +1292,6 @@ Why Choose Us
 </div>
 
 </div>
-
 
 <div class="why-box dark">
 
@@ -1264,7 +1309,7 @@ start to finish.
 
 <p>
 Have questions or want to start your agreement?
-Simply call us and get the assistance you need.
+Simply call or WhatsApp us and get the assistance you need.
 </p>
 
 </div>
@@ -1276,7 +1321,7 @@ Simply call us and get the assistance you need.
 </section>
 
 
-<!-- CHARGES -->
+<!-- ================= CHARGES ================= -->
 
 <section id="charges" class="charges-section">
 
@@ -1294,328 +1339,4 @@ Clear & Transparent Charges
 
 <p>
 Government charges and service charges can vary depending
-on your agreement and applicable requirements.
-</p>
-
-</div>
-
-
-<div class="charge-box">
-
-<div class="charge-row">
-
-<strong>
-Government Charges
-</strong>
-
-<span>
-As applicable
-</span>
-
-</div>
-
-
-<div class="charge-row">
-
-<strong>
-Registration Charges
-</strong>
-
-<span>
-As applicable
-</span>
-
-</div>
-
-
-<div class="charge-row">
-
-<strong>
-Service Charges
-</strong>
-
-<span>
-Shared before confirmation
-</span>
-
-</div>
-
-
-<div class="charge-row">
-
-<strong>
-Doorstep Biometric
-</strong>
-
-<span>
-Available where applicable
-</span>
-
-</div>
-
-</div>
-
-
-<p class="charge-note">
-Government fees and applicable charges may change from
-time to time. Final charges will be confirmed before
-the process is started.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="label">
-FAQ
-</div>
-
-<h2>
-Frequently Asked Questions
-</h2>
-
-<p>
-Quick answers to common Rent Agreement questions.
-</p>
-
-</div>
-
-
-<div class="faq">
-
-
-<details>
-
-<summary>
-What is a Rent Agreement?
-</summary>
-
-<p>
-A Rent Agreement records the terms and conditions agreed
-between the landlord and tenant for renting a property.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-How does the Rent Agreement process work?
-</summary>
-
-<p>
-You share the required details, the agreement draft is
-prepared, you review the details, biometric verification
-is completed where required, and the registration process
-is completed.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-How long does the process take?
-</summary>
-
-<p>
-The time required can vary depending on document
-verification, biometric availability and registration
-requirements.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Is doorstep biometric service available?
-</summary>
-
-<p>
-Doorstep biometric service is available where applicable.
-Please call us to confirm availability for your location.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-How can I start my Rent Agreement?
-</summary>
-
-<p>
-Simply tap the Call Now button and our team will guide
-you through the next steps.
-</p>
-
-</details>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta-section">
-
-<div class="container">
-
-<div class="cta">
-
-<div class="cta-content">
-
-<h2>
-Ready to Start Your Rent Agreement?
-</h2>
-
-<p>
-Get professional assistance with a simple and convenient process.
-</p>
-
-<a href="tel:+919321303626" class="primary-btn">
-☎ &nbsp; Call Now
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div class="footer-brand">
-
-<h3>
-NIKK RENT AGREEMENT
-</h3>
-
-<span>
-Professional Online Rent Agreement Services
-</span>
-
-<p>
-Simple, reliable and professional assistance for
-your Rent Agreement process.
-</p>
-
-</div>
-
-
-<div>
-
-<h4>
-Quick Links
-</h4>
-
-<div class="footer-links">
-
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#process">Process</a>
-<a href="#charges">Charges</a>
-<a href="#faq">FAQ</a>
-
-</div>
-
-</div>
-
-
-<div>
-
-<h4>
-Get In Touch
-</h4>
-
-<div class="footer-links">
-
-<a href="tel:+919321303626">
-Call Now
-</a>
-
-<a href="#home">
-Rent Agreement Services
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 Nikk Rent Agreement. All rights reserved.
-
-</div>
-
-</div>
-
-</footer>
-
-
-<!-- FLOATING CALL BUTTON -->
-
-<a
-href="tel:+919321303626"
-class="floating-call"
-aria-label="Call Nikk Rent Agreement">
-
-☎
-
-</a>
-
-
-<script>
-
-function toggleMenu(){
-
-    const menu = document.getElementById("navLinks");
-
-    menu.classList.toggle("active");
-
-}
-
-document.querySelectorAll(".nav-links a").forEach(function(link){
-
-    link.addEventListener("click",function(){
-
-        document.getElementById("navLinks").classList.remove("active");
-
-    });
-
-});
-
-</script>
-
-</body>
-</html>
+on your agreeme
