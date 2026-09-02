@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NIKK RENT AGREEMENT | Professional Online Rent Agreement Services</title>
+
+<meta name="description" content="NIKK Rent Agreement provides professional, reliable, and convenient online rent agreement preparation, registration, renewal, and doorstep assistance.">
+
+<meta name="keywords" content="Nikk Rent Agreement, online rent agreement, rent agreement registration, rent agreement renewal, doorstep biometric service">
+
+<meta name="author" content="NIKK RENT AGREEMENT">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#444;
+  line-height:1.6;
+  background:#fff;
+}
+
+:root{
+  --orange:#e87500;
+  --dark:#171717;
+  --light:#fff7ef;
+  --grey:#f7f7f7;
+  --border:#e6e6e6;
+  --green:#25d366;
+}
+
+.container{
+  width:92%;
+  max-width:1120px;
+  margin:auto;
+}
+
+a{
+  text-decoration:none;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+}
+
+.navbar{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  color:var(--dark);
+  font-size:20px;
+  font-weight:800;
+}
+
+.logo span{
+  display:block;
+  color:var(--orange);
+  font-size:12px;
+  font-weight:600;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+nav a{
+  color:#333;
+  font-size:14px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--orange);
+}
+
+.nav-btn{
+  background:var(--orange);
+  color:#fff!important;
+  padding:10px 16px;
+  border-radius:8px;
+}
+
+.menu{
+  display:none;
+  border:0;
+  background:none;
+  font-size:28px;
+}
+
+/* HERO */
+
+.hero{
+  padding:90px 0;
+  background:linear-gradient(135deg,#fff,#fff7ef);
+}
+
+.hero-content{
+  max-width:760px;
+}
+
+.badge{
+  display:inline-block;
+  background:#fff0df;
+  color:#c45d00;
+  padding:7px 14px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  color:var(--dark);
+  font-size:clamp(40px,6vw,64px);
+  line-height:1.08;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:var(--orange);
+}
+
+.hero p{
+  font-size:18px;
+  color:#5c5c5c;
+  max-width:680px;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:13px 22px;
+  border-radius:8px;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.primary{
+  background:var(--orange);
+  color:#fff;
+}
+
+.primary:hover{
+  background:#c85f00;
+}
+
+.outline{
+  border:1px solid #ddd;
+  color:var(--dark);
+  background:#fff;
+}
+
+.trust{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px 25px;
+  margin-top:28px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+/* COMMON */
+
+section{
+  padding:80px 0;
+}
+
+.grey{
+  background:var(--grey);
+}
+
+.heading{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 45px;
+}
+
+.eyebrow{
+  color:var(--orange);
+  font-size:13px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.heading h2{
+  color:var(--dark);
+  font-size:38px;
+  margin:8px 0;
+}
+
+.heading p{
+  color:#666;
+}
+
+/* CARDS */
+
+.grid{
+  display:grid;
+  gap:18px;
+}
+
+.three{
+  grid-template-columns:repeat(3,1fr);
+}
+
+.four{
+  grid-template-columns:repeat(4,1fr);
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:28px;
+}
+
+.card:hover{
+  box-shadow:0 10px 30px rgba(0,0,0,.07);
+  transform:translateY(-3px);
+}
+
+.icon{
+  width:50px;
+  height:50px;
+  display:grid;
+  place-items:center;
+  background:#fff0df;
+  border-radius:12px;
+  font-size:24px;
+  margin-bottom:18px;
+}
+
+.card h3{
+  color:var(--dark);
+  margin-bottom:8px;
+  font-size:19px;
+}
+
+.card p{
+  font-size:14px;
+  color:#666;
+}
+
+/* PROCESS */
+
+.process{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
+}
+
+.process-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:25px 15px;
+  text-align:center;
+}
+
+.step{
+  width:42px;
+  height:42px;
+  margin:0 auto 15px;
+  border-radius:50%;
+  background:var(--orange);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+}
+
+/* CHARGES */
+
+.charges{
+  max-width:800px;
+  margin:auto;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.charge{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:18px 22px;
+  border-bottom:1px solid var(--border);
+}
+
+.charge:last-child{
+  border-bottom:0;
+}
+
+.charge strong{
+  color:var(--dark);
+}
+
+.charge span{
+  color:#666;
+  text-align:right;
+}
+
+.note{
+  max-width:800px;
+  margin:20px auto;
+  text-align:center;
+  color:#777;
+  font-size:13px;
+}
+
+/* TRACK */
+
+.track-box{
+  max-width:650px;
+  margin:auto;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:35px;
+}
+
+.track-form{
+  display:flex;
+  gap:10px;
+}
+
+.track-form input{
+  flex:1;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:15px;
+}
+
+.status{
+  display:none;
+  margin-top:25px;
+  padding:20px;
+  background:#f7f7f7;
+  border-radius:10px;
+}
+
+.status li{
+  list-style:none;
+  padding:6px 0;
+  font-size:14px;
+}
+
+.done{
+  color:#16813a;
+  font-weight:bold;
+}
+
+/* FAQ */
+
+.faq{
+  max-width:800px;
+  margin:auto;
+}
+
+details{
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin-bottom:10px;
+  background:#fff;
+}
+
+summary{
+  padding:18px 20px;
+  cursor:pointer;
+  font-weight:bold;
+  color:var(--dark);
+}
+
+details p{
+  padding:0 20px 20px;
+  font-size:14px;
+  color:#666;
+}
+
+/* CTA */
+
+.cta{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+}
+
+.cta h2{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.cta p{
+  color:#ccc;
+  margin-bottom:25px;
+}
+
+.cta .outline{
+  background:transparent;
+  color:#fff;
+  border-color:#555;
+}
+
+/* FOOTER */
+
+footer{
+  background:#101010;
+  color:#aaa;
+  padding:45px 0 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:35px;
+  margin-bottom:30px;
+}
+
+footer h3,
+footer h4{
+  color:#fff;
+  margin-bottom:12px;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.footer-links a{
+  color:#aaa;
+  font-size:14px;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
+.copyright{
+  border-top:1px solid #292929;
+  padding-top:20px;
+  text-align:center;
+  font-size:13px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:58px;
+  height:58px;
+  background:var(--green);
+  color:#fff;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:27px;
+  z-index:999;
+  box-shadow:0 7px 20px rgba(0,0,0,.2);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  nav{
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:20px;
+    flex-direction:column;
+    align-items:flex-start;
+    border-bottom:1px solid var(--border);
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .three,
+  .four{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .process{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+
+  .hero{
+    padding:65px 0;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .heading h2{
+    font-size:30px;
+  }
+
+  .three,
+  .four,
+  .process{
+    grid-template-columns:1fr;
+  }
+
+  .track-form{
+    flex-direction:column;
+  }
+
+  .charge{
+    flex-direction:column;
+    gap:5px;
+  }
+
+  .charge span{
+    text-align:left;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .trust{
+    flex-direction:column;
+    gap:8px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+NIKK RENT AGREEMENT
+<span>Professional Online Rent Agreement Services</span>
+</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#process">How It Works</a>
+<a href="#charges">Charges</a>
+<a href="#track">Track</a>
+<a href="#faq">FAQ</a>
+<a href="#contact" class="nav-btn">Contact Us</a>
+</nav>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="container">
+
+<div class="hero-content">
+
+<div class="badge">
+Simple • Reliable • Professional
+</div>
+
+<h1>
+Your Rent Agreement.<br>
+<span>Handled Professionally.</span>
+</h1>
+
+<p>
+Receive professional assistance with the preparation and registration of your Rent Agreement through a simple, reliable, and convenient process.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20to%20start%20a%20Rent%20Agreement."
+target="_blank">
+Contact Us on WhatsApp
+</a>
+
+<a
+class="btn outline"
+href="tel:+919321303626">
+Call Us
+</a>
+
+</div>
+
+<div class="trust">
+<span>✓ Streamlined Process</span>
+<span>✓ Professional Assistance</span>
+<span>✓ Clear Communication</span>
+<span>✓ Doorstep Service Available</span>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- START -->
+
+<section class="grey">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Get Started</div>
+<h2>Begin Your Agreement Process</h2>
+<p>Select the service that best meets your requirements.</p>
+</div>
+
+<div class="grid three">
+
+<div class="card">
+<div class="icon">🏠</div>
+<h3>New Rent Agreement</h3>
+<p>Receive professional assistance with preparing and registering a new Rent Agreement.</p>
+<br>
+<a class="btn primary"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20a%20new%20Rent%20Agreement."
+target="_blank">
+Start a New Agreement
+</a>
+</div>
+
+<div class="card">
+<div class="icon">🔄</div>
+<h3>Renew an Existing Agreement</h3>
+<p>Renew your existing Rent Agreement with reliable guidance and assistance.</p>
+<br>
+<a class="btn primary"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20to%20renew%20my%20Rent%20Agreement."
+target="_blank">
+Request Renewal
+</a>
+</div>
+
+<div class="card">
+<div class="icon">📋</div>
+<h3>Check Agreement Status</h3>
+<p>Track the progress of your submitted request using your Client ID.</p>
+<br>
+<a class="btn outline" href="#track">
+Check Status
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Our Services</div>
+<h2>Rent Agreement Services</h2>
+<p>Comprehensive assistance for your Rent Agreement requirements.</p>
+</div>
+
+<div class="grid four">
+
+<div class="card">
+<div class="icon">📝</div>
+<h3>Agreement Preparation</h3>
+<p>Professional assistance with preparing your Rent Agreement accurately and efficiently.</p>
+</div>
+
+<div class="card">
+<div class="icon">📄</div>
+<h3>Registration Assistance</h3>
+<p>Guidance and support throughout the Rent Agreement registration process.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏠</div>
+<h3>Doorstep Biometric Service</h3>
+<p>Doorstep biometric assistance is available in applicable locations.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔄</div>
+<h3>Agreement Renewal</h3>
+<p>Convenient assistance with renewing your existing Rent Agreement.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="grey" id="process">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Our Process</div>
+<h2>How It Works</h2>
+<p>Complete your Rent Agreement through a clear, structured, and efficient process.</p>
+</div>
+
+<div class="process">
+
+<div class="process-card">
+<div class="step">1</div>
+<h3>Share Your Details</h3>
+<p>Provide your basic agreement information.</p>
+</div>
+
+<div class="process-card">
+<div class="step">2</div>
+<h3>Draft Preparation</h3>
+<p>Our team prepares the agreement draft.</p>
+</div>
+
+<div class="process-card">
+<div class="step">3</div>
+<h3>Review and Confirm</h3>
+<p>Review the draft and confirm the details.</p>
+</div>
+
+<div class="process-card">
+<div class="step">4</div>
+<h3>Verification</h3>
+<p>Complete the required verification procedures.</p>
+</div>
+
+<div class="process-card">
+<div class="step">5</div>
+<h3>Registration</h3>
+<p>Complete the Rent Agreement registration process.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CHARGES -->
+
+<section id="charges">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Transparent Pricing</div>
+<h2>Rent Agreement Charges</h2>
+<p>Final charges vary depending on the agreement requirements and applicable government fees.</p>
+</div>
+
+<div class="charges">
+
+<div class="charge">
+<strong>Government Charges</strong>
+<span>As applicable</span>
+</div>
+
+<div class="charge">
+<strong>Registration Charges</strong>
+<span>As applicable</span>
+</div>
+
+<div class="charge">
+<strong>Professional Service Charges</strong>
+<span>Based on the selected service</span>
+</div>
+
+<div class="charge">
+<strong>Doorstep Service Charges</strong>
+<span>If required</span>
+</div>
+
+</div>
+
+<p class="note">
+Government charges are subject to change. The final charges will be confirmed before the process begins.
+</p>
+
+<div style="text-align:center">
+
+<a
+class="btn primary"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20a%20quick%20quote."
+target="_blank">
+Request a Quick Quote
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- TRACK -->
+
+<section class="grey" id="track">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Client Area</div>
+<h2>Track Your Agreement</h2>
+<p>Enter your Client ID to view the current status of your agreement request.</p>
+</div>
+
+<div class="track-box">
+
+<form class="track-form" onsubmit="checkStatus(event)">
+
+<input
+id="clientId"
+type="text"
+placeholder="Enter your Client ID"
+required>
+
+<button class="btn primary" type="submit">
+Check Status
+</button>
+
+</form>
+
+<div class="status" id="status">
+
+<strong>Agreement Status</strong>
+
+<ul style="margin-top:12px">
+
+<li class="done">✓ Request Received</li>
+<li class="done">✓ Details Verified</li>
+<li class="done">✓ Draft Preparation</li>
+<li>○ Verification</li>
+<li>○ Registration</li>
+<li>○ Completed</li>
+
+</ul>
+
+</div>
+
+<p style="text-align:center;margin-top:18px;font-size:13px;color:#777">
+
+Need assistance?
+
+<a
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20need%20help%20with%20my%20agreement%20status."
+target="_blank"
+style="color:#e87500;font-weight:bold;">
+Contact us on WhatsApp
+</a>
+
+</p>
+
+</div>
+</div>
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+<div class="container">
+
+<div class="heading">
+<div class="eyebrow">Frequently Asked Questions</div>
+<h2>Common Questions</h2>
+<p>Find answers to common questions about Rent Agreements and our services.</p>
+</div>
+
+<div class="faq">
+
+<details>
+<summary>Rent Agreement kya hota hai?</summary>
+<p>
+Rent Agreement landlord aur tenant ke beech rental terms and conditions ko formally record karne wala agreement hota hai.
+</p>
+</details>
+
+<details>
+<summary>Rent Agreement kaise banega?</summary>
+<p>
+Aap WhatsApp ya call ke madhyam se apni basic details share kar sakte hain. Iske baad agreement preparation aur registration process ke liye professional guidance di jayegi.
+</p>
+</details>
+
+<details>
+<summary>Kitna samay lagta hai?</summary>
+<p>
+Processing time verification, document submission, aur applicable registration procedures par depend karta hai.
+</p>
+</details>
+
+<details>
+<summary>Kaunse documents required hain?</summary>
+<p>
+Required details aur documents agreement ke type aur applicable requirements ke according bataye jayenge.
+</p>
+</details>
+
+<details>
+<summary>Kya doorstep biometric service available hai?</summary>
+<p>
+Applicable locations mein doorstep biometric assistance available ho sakti hai. Availability aur details ke liye humse contact karein.
+</p>
+</details>
+
+<details>
+<summary>Kya Rent Agreement renew kiya ja sakta hai?</summary>
+<p>
+Haan, existing Rent Agreement renewal ke liye aap humse contact kar sakte hain.
+</p>
+</details>
+
+</div>
+</div>
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<h2>Ready to Begin Your Rent Agreement?</h2>
+
+<p>
+Contact us today to start your Rent Agreement process.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20to%20start%20my%20Rent%20Agreement."
+target="_blank">
+Contact Us on WhatsApp
+</a>
+
+<a
+class="btn outline"
+href="tel:+919321303626">
+Call +91 93213 03626
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>NIKK RENT AGREEMENT</h3>
+
+<p>
+Professional Online Rent Agreement Services
+</p>
+
+<p style="margin-top:10px">
+Simple • Reliable • Professional
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#process">How It Works</a>
+<a href="#charges">Charges</a>
+<a href="#track">Track Agreement</a>
+<a href="#faq">FAQ</a>
+</div>
+
+</div>
+
+<div>
+
+<h4>Contact Us</h4>
+
+<div class="footer-links">
+
+<a
+href="https://wa.me/919321303626"
+target="_blank">
+WhatsApp: +91 93213 03626
+</a>
+
+<a href="tel:+919321303626">
+Call: +91 93213 03626
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NIKK RENT AGREEMENT. All rights reserved.
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20would%20like%20more%20information%20about%20your%20Rent%20Agreement%20services."
+target="_blank"
+aria-label="Contact NIKK Rent Agreement on WhatsApp">
+💬
+</a>
+
+
+<script>
+
+function toggleMenu(){
+
+  document.getElementById("nav").classList.toggle("active");
+
+}
+
+function checkStatus(event){
+
+  event.preventDefault();
+
+  const clientId =
+  document.getElementById("clientId").value.trim();
+
+  if(clientId===""){
+    return;
+  }
+
+  document.getElementById("status").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
