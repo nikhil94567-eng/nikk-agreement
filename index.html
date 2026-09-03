@@ -1612,3 +1612,1141 @@ footer{
     100%{
         box-shadow:
         0 0 0 0 rgba
+               0 0 0 0 rgba(37,211,102,0),
+        0 8px 25px rgba(0,0,0,.22);
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:950px){
+
+    .nav-links{
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+
+        background:#fff;
+
+        border-bottom:1px solid #eee;
+
+        box-shadow:
+            0 10px 25px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:15px 25px;
+        border-bottom:1px solid #f1f1f1;
+    }
+
+    .nav-call{
+        margin:10px 20px 15px;
+        text-align:center;
+    }
+
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .services-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .what-you-get-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .why-nikk-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-nikk-bottom{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-grid{
+        grid-template-columns:
+            1.3fr 1fr 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:600px){
+
+    .section{
+        padding:70px 15px;
+    }
+
+    .navbar{
+        height:70px;
+    }
+
+    .logo-mark{
+        width:39px;
+        height:39px;
+        font-size:18px;
+        border-radius:11px;
+    }
+
+    .logo-text strong{
+        font-size:15px;
+    }
+
+    .logo-text span{
+        font-size:9px;
+    }
+
+    .menu-btn{
+        width:40px;
+        height:40px;
+        font-size:20px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        padding:
+            75px 15px
+            70px;
+    }
+
+    .hero h1{
+        font-size:
+            clamp(39px,11vw,50px);
+
+        letter-spacing:-1.8px;
+    }
+
+    .hero-description{
+        font-size:15px;
+        line-height:1.75;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .hero-points{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .hero-point{
+        justify-content:center;
+    }
+
+
+    /* TRUST */
+
+    .trust-strip{
+        padding:17px 15px;
+    }
+
+    .trust-container{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .trust-item{
+        border-right:0;
+        border-bottom:
+            1px solid rgba(255,255,255,.12);
+
+        padding-bottom:12px;
+    }
+
+    .trust-item:last-child{
+        border-bottom:0;
+        padding-bottom:0;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+        padding:27px 23px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    /* WHY */
+
+    .why-nikk-section{
+        padding:
+            70px 15px;
+    }
+
+    .why-nikk-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-card{
+        padding:24px 20px;
+        gap:15px;
+    }
+
+    .why-icon{
+        min-width:50px;
+        width:50px;
+        height:50px;
+        font-size:22px;
+    }
+
+    .why-card h3{
+        font-size:17px;
+    }
+
+    .why-card p{
+        font-size:13px;
+    }
+
+    .why-nikk-bottom{
+        padding:22px 20px;
+    }
+
+    .why-whatsapp-btn{
+        width:100%;
+    }
+
+
+    /* WHAT YOU GET */
+
+    .what-you-get-grid{
+        grid-template-columns:1fr;
+    }
+
+    .get-card{
+        padding:25px 21px;
+    }
+
+    .get-mini-cta{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .get-mini-content{
+        align-items:flex-start;
+    }
+
+    .get-mini-btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* CHARGES */
+
+    .charges-grid{
+        grid-template-columns:1fr;
+    }
+
+    .charge-card{
+        padding:20px;
+    }
+
+
+    /* FAQ */
+
+    .faq-item summary{
+        padding:
+            18px 48px
+            18px 18px;
+    }
+
+    .faq-answer{
+        padding:
+            0 18px
+            18px;
+    }
+
+
+    /* CTA */
+
+    .final-cta{
+        padding:
+            70px 15px;
+    }
+
+    .final-cta-buttons{
+        flex-direction:column;
+    }
+
+    .final-cta-buttons .btn{
+        width:100%;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+        padding:
+            45px 15px
+            22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+
+    /* FLOATING WHATSAPP */
+
+    .floating-whatsapp{
+        width:55px;
+        height:55px;
+
+        right:17px;
+        bottom:17px;
+
+        font-size:25px;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width:380px){
+
+    .hero h1{
+        font-size:37px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .hero-badge{
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        scroll-behavior:auto !important;
+        animation:none !important;
+        transition:none !important;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-mark">
+                N
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    NIKK RENT AGREEMENT
+                </strong>
+
+                <span>
+                    Professional Online Rent Agreement Services
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+            aria-label="Open Menu">
+
+            ☰
+
+        </button>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#process">
+                Process
+            </a>
+
+            <a href="#charges">
+                Charges
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a
+                href="tel:+919321303626"
+                class="nav-call">
+
+                ☎ Call Now
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-badge">
+
+            ✓ Simple • Reliable • Professional
+
+        </div>
+
+
+        <h1>
+
+            Your Rent Agreement.<br>
+
+            <span>
+                Handled Professionally.
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Professional assistance with the preparation
+            and registration of your Rent Agreement through
+            a simple, reliable and convenient process.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="tel:+919321303626"
+                class="btn btn-primary">
+
+                ☎ Call Now
+
+            </a>
+
+
+            <a
+                href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20want%20to%20know%20about%20Rent%20Agreement%20services."
+                target="_blank"
+                rel="noopener"
+                class="btn btn-whatsapp">
+
+                💬 WhatsApp Chat
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-points">
+
+            <div class="hero-point">
+                Easy Process
+            </div>
+
+            <div class="hero-point">
+                Professional Assistance
+            </div>
+
+            <div class="hero-point">
+                Clear Communication
+            </div>
+
+            <div class="hero-point">
+                Doorstep Service Available
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     TRUST
+========================================= -->
+
+<div class="trust-strip">
+
+    <div class="trust-container">
+
+        <div class="trust-item">
+
+            <strong>
+                Simple
+            </strong>
+
+            <span>
+                Easy & convenient process
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <strong>
+                Professional
+            </strong>
+
+            <span>
+                Complete agreement assistance
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <strong>
+                Convenient
+            </strong>
+
+            <span>
+                Doorstep service available
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     SERVICES
+========================================= -->
+
+<section
+    class="section services-section"
+    id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                OUR SERVICES
+            </div>
+
+            <h2>
+                Everything You Need for Your
+                <span>Rent Agreement</span>
+            </h2>
+
+            <p>
+                A focused service designed to make your
+                Rent Agreement process simple, clear
+                and hassle-free.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Rent Agreement Preparation
+                </h3>
+
+                <p>
+                    Professional assistance in preparing
+                    your Rent Agreement with the required
+                    details and terms.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Registration Assistance
+                </h3>
+
+                <p>
+                    Guidance and assistance throughout
+                    the Rent Agreement registration process.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Doorstep Service
+                </h3>
+
+                <p>
+                    Doorstep biometric service available
+                    for added convenience wherever applicable.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PROCESS
+========================================= -->
+
+<section
+    class="section process-section"
+    id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                HOW IT WORKS
+            </div>
+
+            <h2>
+                A Simple <span>5-Step Process</span>
+            </h2>
+
+            <p>
+                From sharing your details to completing
+                your agreement, we keep the process
+                straightforward.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <h3>
+                    Share Details
+                </h3>
+
+                <p>
+                    Share landlord, tenant and property details.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <h3>
+                    Draft Preparation
+                </h3>
+
+                <p>
+                    Agreement draft is prepared for review.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <h3>
+                    Review
+                </h3>
+
+                <p>
+                    Check the agreement details and confirm.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <h3>
+                    Biometric
+                </h3>
+
+                <p>
+                    Complete biometric verification as required.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    05
+                </div>
+
+                <h3>
+                    Registration
+                </h3>
+
+                <p>
+                    Complete the registration process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     WHY NIKK
+========================================= -->
+
+<section
+    class="why-nikk-section">
+
+    <div class="why-nikk-container">
+
+
+        <div class="why-nikk-heading">
+
+            <div class="why-nikk-badge">
+                WHY NIKK
+            </div>
+
+            <h2>
+                Simple Service.
+                <span>Professional Approach.</span>
+            </h2>
+
+            <p>
+                We keep the process focused on what matters
+                most — clear communication and convenient
+                assistance.
+            </p>
+
+        </div>
+
+
+        <div class="why-nikk-grid">
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Simple Process
+                    </h3>
+
+                    <p>
+                        Easy steps without unnecessary
+                        complications.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    🤝
+                </div>
+
+                <div>
+
+                    <h3>
+                        Professional Assistance
+                    </h3>
+
+                    <p>
+                        Support throughout the agreement
+                        process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>
+                        Clear Communication
+                    </h3>
+
+                    <p>
+                        Important information explained
+                        clearly.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="why-icon">
+                    🏠
+                </div>
+
+                <div>
+
+                    <h3>
+                        Convenient Service
+                    </h3>
+
+                    <p>
+                        Doorstep biometric service available
+                        where applicable.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-nikk-bottom">
+
+            <div class="why-bottom-text">
+
+                <strong>
+                    Need help with your Rent Agreement?
+                </strong>
+
+                <span>
+                    Contact us directly for assistance.
+                </span>
+
+            </div>
+
+
+            <a
+                href="https://wa.me/919321303626?text=Hello%20Nikk%20Rent%20Agreement%2C%20I%20need%20assistance."
+                target="_blank"
+                rel="noopener"
+                class="why-whatsapp-btn">
+
+                💬 WhatsApp Chat
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     WHAT YOU GET
+========================================= -->
+
+<section
+    class="section what-you-get-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                WHAT YOU GET
+            </div>
+
+            <h2>
+                A Better Way to Handle Your
+                <span>Agreement</span>
+            </h2>
+
+            <p>
+                Everything is kept simple and organized
+                so you can complete your agreement process
+                with confidence.
+            </p>
+
+        </div>
+
+
+        <div class="what-you-get-grid">
+
+
+            <div class="get-card">
+
+                <div class="get-top">
+
+                    <div class="get-icon">
+                        📄
+                    </div>
+
+                    <div class="get-number">
+                        01
+                    </div>
+
+                </div>
+
+                <h3>
+                    Proper Documentation
+                </h3>
+
+                <p>
+                    Assistance with the required agreement
+                    details and documentation.
+                </p>
+
+            </div>
+
+
+            <div class="get-card">
+
+                <div class="get-top">
+
+                    <div class="get-icon">
+                        🔍
+                    </div>
+
+                    <div class="get-number">
+                        02
+                    </div>
+
+                </div>
+
+                <h3>
+                    Detail Review
+                </h3>
+
+                <p>
+                    Review important details before proceeding
+                    with the registration process.
+                </p>
+
+            </div>
+
+
+            <div class="get-card">
+
+                <div class="get-top">
+
+                    <div class="get-icon">
+                        🤝
+                    </div>
+
+                    <div class="get-number">
+                        03
+                    </div>
+
+                </div>
+
+                <h3>
+                    Personal Assistance
+                </h3>
+
+                <p>
+                    Get assistance throughout the process
+                    whenever required.
+                </p>
+
+            </div>
+
+
+            <div class="get-card">
+
+                <div class="get-top">
+
+                    <div class="get-icon">
+                        📱
+                    </div>
+
+                    <div class="get-number">
+                        04
+                    </div>
+
+                </div>
+
+                <h3>
+                    Easy Communication
+                </h3>
+
+                <p>
+                    Contact us easily by phone or WhatsApp
+                    for your queries.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="get-mini-cta">
+
+            <div class="get-mini-content">
+
+                <div class="get-mini-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        Ready to start?
+                    </strong>
+
+                    <span>
+                        Contact Nikk Rent Agreement today.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="tel:+919321303626"
+                class="get-mini-btn">
+
+       
